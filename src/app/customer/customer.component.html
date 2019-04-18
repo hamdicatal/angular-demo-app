@@ -1,0 +1,11 @@
+<h3>Current city is {{ city }}</h3>
+
+<ul>
+  <li *ngFor="let customer of customers" (click)="selectCustomer(customer)">
+    {{ customer.name }}
+  </li>
+</ul>
+
+<strong *ngIf="selectedCustomer">
+  {{ selectedCustomer.name }} seçildi.
+</strong>
